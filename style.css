@@ -1,19 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
-
 body {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  
+  background-color: rgb(250, 248, 248);
 }
 
 .head {
-  height: 20vh;
+  height: 25vh;
   width: 85vw;
   display: flex;
   flex-direction: column;
@@ -25,20 +26,19 @@ body {
   width: 85vw;
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: rgb(250, 248, 248);
   align-items: center;
   justify-content: space-between;
-  
 }
 
-
-                   /*------------------ estilização da logo (Inicio)---------------------*/
+/*------------------ estilização da logo (Inicio)---------------------*/
 .logo {
   gap: 0.5vw;
   width: auto;
   display: flex;
   align-items: center;
   flex-direction: row;
+  cursor: alias;
 }
 .logo > p {
   font-family: "Inter", sans-serif;
@@ -49,9 +49,9 @@ body {
 .logo > img {
   width: 33px;
   height: 33px;
-}                     /*----------------- estilização logo (Fim)----------------*/
+} /*----------------- estilização logo (Fim)----------------*/
 
-    /* ------------------------------- Estilizaçao do input (inicio) ------------------------- */
+/* ------------------------------- Estilizaçao do input (inicio) ------------------------- */
 
 .input-search {
   width: 40vw;
@@ -64,7 +64,7 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
-  background-color: rgba(241, 239, 239, 0.445);
+  background-color: #f5f5f5;
 }
 .input-search > input::placeholder {
   padding-left: 2vw;
@@ -74,7 +74,7 @@ body {
   opacity: 0.5;
   margin-top: 0.5vh;
   margin-left: -2.5vw;
-  color:rgba(57, 56, 56, 0.678) ;
+  color: rgba(57, 56, 56, 0.678);
 }
 .input-search > span:hover {
   cursor: pointer;
@@ -83,7 +83,7 @@ body {
 
 .cadastre-se {
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 .cadastre-se > a {
@@ -95,39 +95,617 @@ align-items: center;
   color: black;
 }
 .cadastre-se > button {
-  background-color: #C92071;
+  background-color: #c92071;
   color: white;
   width: 7vw;
   height: 5vh;
   border: none;
   border-radius: 5px;
   margin-left: 2vw;
-
+  cursor: pointer;
 }
 
 .carrinho > img {
   display: flex;
-  
+  cursor: pointer;
 }
 
 .nav-bar {
   display: flex;
   height: 4.5vh;
   align-items: center;
-  gap: 3vw;
+  margin-bottom: 3vh;
 }
 
 .nav-bar > div > p {
-  position: static;
   text-decoration: none;
   color: black;
   font-family: "inter", sans-serif;
   font-weight: 300;
+  border-bottom: 2px solid rgb(250, 248, 248);
+  width: fit-content;
+  cursor: pointer;
+}
+.nav-bar > div {
+  width: 8vw;
+  border: none;
+}
+#home {
+  width: 5vw;
+}
+#categorias {
+  width: 8vw;
+}
+#produtos {
+  width: 7vw;
 }
 
-.nav-bar > div > p:hover{
-  color: #C92071;
+.nav-bar > div > p:hover {
+  color: #c92071;
   font-family: "inter", sans-serif;
   font-weight: 600;
-  border-bottom: 2px solid #C92071;  
+  border-bottom: 2px solid #c92071;
+}
+/* -------------------- Fim do Header -------------------------- */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  height: 85vh;
+  width: 98.9vw;
+}
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 85vw;
+}
+.banner-text {
+  padding-top: 12vh;
+}
+#title-amarelo {
+  color: #f6aa1c;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+}
+.banner-text > p {
+  padding-top: 2vh;
+  color: #474747;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+}
+
+.banner-text > h1 {
+  color: #1f1f1f;
+  font-family: "inter", sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.banner-text > button {
+  background-color: #c92071;
+  width: 10vw;
+  height: 5vh;
+  margin-top: 3vh;
+  color: #f5f5f5;
+  text-align: center;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-image {
+  display: flex;
+  flex-direction: column;
+}
+.banner-image > img {
+  padding-top: 10vh;
+  margin-right: 5vw;
+  height: 60vh;
+}
+.banner-image > svg {
+  padding: 5vh 3.5vw 5vh 12vw;
+  height: 5vh;
+
+  display: flex;
+}
+
+.ornament {
+  padding: 3vh 0 0 0;
+  height: 25vh;
+  align-self: flex-start;
+}
+/* ------------------------- Fim do banner ------------------------------ */
+.destaques {
+  height: 70vh;
+  width: 98.9vw;
+  background-color: rgb(250, 248, 248);
+  display: flex;
+  flex-direction: column;
+}
+
+.title-destaque {
+  color: #474747;
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+}
+
+.title-destaque h2 {
+  padding-left: 7vw;
+  padding-top: 5vh;
+}
+.card-destaque {
+  width: 98.8vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.card {
+  border-radius: 8px;
+  background-color: #d8e3f2;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  width: 27.5vw;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5vh;
+  padding-left: 2vw;
+}
+.card-content > p {
+  width: 5vw;
+  display: inline-flex;
+  padding: 5px 15px;
+  gap: 10px;
+  border-radius: 29px;
+  background: #eeff018e;
+}
+
+.card-content > h3 {
+  color: #1f1f1f;
+  font-family: "inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+  width: 16vw;
+}
+.card-content > button {
+  color: #c92071;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  height: 7vh;
+  width: 12vw;
+  font-size: 16px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+#card1 {
+  background-image: url(Assets/Images/blusa-supreme.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#card2 {
+  background-image: url(Assets/Images/tenis-adidas.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#card3 {
+  background-image: url(Assets/Images/beats-bass.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+/* -----------------------Fim do card-destaque ----------------------- */
+
+.categorias {
+  height: 50vh;
+  width: 85vw;
+  background-color: rgb(250, 248, 248);
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.categorias > h3 {
+  color: #1f1f1f;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+.options-destaque {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+#camisetas {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 150px;
+  background: white;
+  box-shadow: 0px 4px 25px 0px rgba(138, 137, 137, 0.164);
+}
+#calcas {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 150px;
+  background: #fff;
+}
+#bones {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 150px;
+  background: #fff;
+}
+#headphones {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 150px;
+  background: #fff;
+}
+#tenis {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 150px;
+  background: #fff;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+.label > label {
+  color: #474747;
+  text-align: center;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+}
+/* ---------------------------- Fim dos Cards ---------------------------- */
+
+.produto-em-alta {
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+  width: 85vw;
+  background-color: rgb(250, 248, 248);
+}
+.section-title {
+  display: flex;
+  height: 8vh;
+  width: 85vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-title > h3 {
+  color: #1f1f1f;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 5vh;
+}
+.section-title > div {
+  display: flex;
+  gap: 0.5vw;
+}
+.section-title > div > p {
+  color: #c92071;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+}
+
+.tenis-destaque {
+  width: 85vw;
+  height: 140vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.card-tenis {
+  height: 50vh;
+  width: 20vw;
+  background-color: white;
+  background-image: url(Assets/Images/tenis.png);
+  background-size: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.card-tenis > p {
+  width: 5vw;
+  display: flex;
+  padding: 10px 15px;
+  margin: 25px 25px;
+  gap: 10px;
+  border-radius: 29px;
+  background: #eeff018e;
+}
+#port-ten-card {
+  display: flex;
+  align-items: flex-start;
+}
+#port-ten-card > p {
+  color: #8f8f8f;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+#port-ten-card > h4 {
+  color: #474747;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.75px;
+}
+#de {
+  color:  #8F8F8F;
+font-family: "inter", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; 
+letter-spacing: 0.75px;
+text-decoration: line-through;
+}
+
+#por {
+  color:  #1F1F1F;
+font-family: "inter", sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px; 
+letter-spacing: 0.75px;
+}
+.preco {
+  gap: 1vw;
+  display: flex;
+}
+
+.img-air-jordan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 466px;
+height: 466px;
+flex-shrink: 0;
+border-radius: 466px;
+background: linear-gradient(
+  180deg, rgba(66, 0, 255, 0.25) -40.67%, 
+          rgba(255, 255, 255, 0.00) 100%
+);
+}
+.oferta-especial {
+  margin-top: 15vh;
+  gap: 12vw;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 85vw;
+}
+.img-air-jordan > img {
+  width: 573px;
+height: 330px;
+flex-shrink: 0;
+}
+.text-especial > h4 {
+  color: #c92071;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+
+}
+.text-especial > h2 {
+  color:  #474747;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 1px;
+}
+.text-especial > p {
+  color: #474747;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.75px;
+}
+.text-especial > button {
+  margin-top: 6vh;
+  color: white;
+  background-color:#c92071;
+  border: none;
+  border-radius: 8px;
+  height: 7vh;
+  width: 12vw;
+  font-size: 16px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* ---------------------- Começo do Footer ----------------------------- */
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #1F1F1F;
+  height: 60vh;
+  width: 98.9vw;
+  justify-content: center;
+}
+.footer-content {
+  margin-top: 10vh;
+  width: 100VW;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+.col-1 {
+  gap: 4vh;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  flex-direction: column;
+  width: 20vw;
+}
+.col-1 > div > p {
+  color: white;
+}
+#logo-footer > p {
+  color: white;
+}
+.redes-sociais {
+  width: fit-content;
+}
+.col-info {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.col-info > h4 {
+  color: white;
+  font-family: "inter", sans-serif;
+}
+
+#option  {
+  width: fit-content;
+  height: fit-content;
+  gap: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+}
+
+.col-categorias {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.col-categorias > h4 {
+  color: white;
+  font-family: "inter", sans-serif;
+}
+#categoria {
+  width: fit-content;
+  height: fit-content;
+  gap: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.col-contato {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.col-contato > h4 {
+  color: white;
+  font-family: "inter", sans-serif;
+}
+#contato {
+  width: fit-content;
+  height: fit-content;
+  gap: 2.5vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+#linha {
+  width: 80vw;
+  display: flex;
+  align-self: flex-start;
+}
+#linha > hr {
+  border-color: #525252;
+  width: 100%;
+  border-top: none;
+  
+}
+.copy {
+  color: white;
+  display: flex;
+  width: 100vw;
+  align-self: flex-start;
+  justify-content: center;
 }
