@@ -226,7 +226,7 @@ body {
   display: flex;
 }
 
-.ornament {
+#ornament {
   padding: 3vh 0 0 0;
   height: 25vh;
   align-self: flex-start;
@@ -309,7 +309,7 @@ body {
   cursor: pointer;
 }
 #card1 {
-  background-image: url(Assets/Images/blusa-supreme.png);
+  background-image: url(Assets/Images/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt-text-transparent-png-616696\ 1.png);
   background-repeat: no-repeat;
   background-position: right;
 }
